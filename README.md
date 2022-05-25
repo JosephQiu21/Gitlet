@@ -16,4 +16,4 @@ This Gitlet system support:
 
 6. **Remote features**: managing and operating remote repositories.
 
-Details of this project will be updated soon.
+You can view the details of the Gitlet project [here](https://inst.eecs.berkeley.edu/~cs61b/sp22/materials/proj/proj3/introduction.html).
