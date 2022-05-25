@@ -1,0 +1,36 @@
+# Test for branching, checkingout and merging
+> init
+<<<
++ hello.txt hello.txt
+> add hello.txt
+<<<
+> commit "add hello.txt"
+<<<
+> branch hotfix
+<<<
++ myname.txt myname.txt
+> add myname.txt
+<<<
+> commit "add myname.txt"
+<<<
+# check out to hotfix, there shouldn't exist myname.txt
+> checkout hotfix
+<<<
+E hello.txt
+* myname.txt
++ hot.txt hot.txt
+> add hot.txt
+<<<
+> commit "add hot.txt"
+<<<
+# check out to master, there shouldn't exist hot.txt and should exist myname.txt
+> checkout master
+<<<
+E myname.txt
+* hot.txt
+# merge hotfix, all three files should exist
+> merge hotfix
+<<<
+E myname.txt
+E hot.txt
+# hello.txt
